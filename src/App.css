@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.wrapper_ot {
+	width: auto;
+	height: 100vh;
+	text-transform: uppercase;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./images/old_trafford.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: opacity(80%);
+}
+.wrapper_gs {
+	width: auto;
+	height: 100vh;
+	background-color: rgb(12, 12, 12);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: opacity(80%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper_cur {
+	width: auto;
+	height: 100vh;
+	background-color: rgb(12, 12, 12);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: opacity(80%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sp {
+	justify-content: space-around;
+}
+.main_header {
+	text-align: center;
+	color: rgb(206, 200, 200);
 }
 
-.App-link {
-  color: #61dafb;
+.main_header > p {
+	font-size: 14px;
+}
+.gs_header {
+	margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+	display: inline-block;
+	height: 300px;
+	width: 250px;
+	margin-left: 25px;
+	word-wrap: break-word;
+	color: whitesmoke;
+	background-color: rgb(98, 8, 8);
+	border-radius: 15px;
+}
+.card:hover {
+	cursor: pointer;
+	transition: ease-in-out 0.15s;
+	height: 320px;
+	width: 280px;
+}
+.mr {
+	margin-right: 25px;
+}
+.card > img {
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+}
+
+.card > h3 {
+	text-align: center;
+}
+
+.manutd_text {
+	color: rgb(231, 17, 17);
+}
+.manutd_text:hover {
+	cursor: pointer;
+	transition: ease-in-out 0.1s;
+	text-shadow: 2px 2px 2px rgb(255, 0, 0);
+}
+
+.cur_card {
+	text-align: center;
+	width: 50vw;
+	height: 400px;
+	background-color: rgb(98, 8, 8);
+	margin: 2px;
 }
